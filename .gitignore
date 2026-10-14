@@ -1,6 +1,7 @@
 # Firmware / extracted kernel (large, proprietary)
 boot.img
-boot/
+/boot/*
+!/boot/kernel.img
 analysis/*.tar.xz
 analysis/*.tar
 
