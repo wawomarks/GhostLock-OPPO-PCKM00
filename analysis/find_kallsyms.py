@@ -1,5 +1,7 @@
 import struct
-d = open(r'D:\opporoot\boot\kernel','rb').read()
+import sys
+kernel_path = sys.argv[1] if len(sys.argv) > 1 else '/workspaces/GhostLock-OPPO-PCKM00/boot/kernel.img'
+d = open(kernel_path,'rb').read()
 N = len(d)
 
 def parse_names(pos, count, maxlen=0x80):
